@@ -17,7 +17,7 @@ npm run test:coverage //To run unit tests with code coverage
 
 ## To run jest tests in /functional
 
-cd functional
+cd fundamentals
 
 npm install
 
