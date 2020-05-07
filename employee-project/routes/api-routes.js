@@ -11,7 +11,8 @@ router.get('/', (req,res)=>{
 })
 
 router.post('/contacts', controller.createEmployee);
-router.get('/contacts', controller.getAllEmployees);
+//in the videos i have wrongly put two time getAllEmployees
+//router.get('/contacts', controller.getAllEmployees);
 router.get('/contacts', controller.getAllEmployees);
 router.get('/contacts/:employee_id', controller.getEmployeeById);
 router.put('/contacts/:employee_id',
