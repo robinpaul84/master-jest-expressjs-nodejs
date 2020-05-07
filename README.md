@@ -4,7 +4,7 @@
 
 cd employee-project
 
-npm init
+npm install
 
 npm run server // To start the web server locally on port 8080
 
@@ -19,6 +19,6 @@ npm run test:coverage //To run unit tests with code coverage
 
 cd functional
 
-npm init
+npm install
 
 jest
