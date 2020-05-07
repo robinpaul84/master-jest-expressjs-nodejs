@@ -1,6 +1,6 @@
 # master-nodejs-express-jest
 
-To run employee project
+## To run employee project
 
 cd employee-project
 
@@ -14,3 +14,11 @@ npm run test:integration //To perform integration tests
 
 npm run test:coverage //To run unit tests with code coverage
 
+
+## To run jest tests in /functional
+
+cd functional
+
+npm init
+
+jest
