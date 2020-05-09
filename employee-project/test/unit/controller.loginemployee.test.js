@@ -36,6 +36,7 @@ describe("controller.loginEmployee",()=>{
         expect(res._getJSONData()).toStrictEqual(mockEmployee);
         expect(res._getHeaders()['auth-token']).toStrictEqual("fakejwttoken")
     });
+    
 
     //added extra test for stryker mutation
     // test("login from a valid employee but wrong password", async ()=>{
