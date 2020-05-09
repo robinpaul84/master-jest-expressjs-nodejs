@@ -36,6 +36,16 @@ describe("controller.loginEmployee",()=>{
         expect(res._getJSONData()).toStrictEqual(mockEmployee);
         expect(res._getHeaders()['auth-token']).toStrictEqual("fakejwttoken")
     });
+
+    //added extra test for stryker mutation
+    // test("login from a valid employee but wrong password", async ()=>{
+    //     model.findOne.mockReturnValue(mockEmployee);
+    //     bcrypt.compare.mockReturnValue(false);
+    //     await controller.loginEmployee(req, res, next);
+    //     expect(res.statusCode).toBe(400);
+    //     expect(res._getData()).toStrictEqual("you provided an invalid password , please try again");
+    // });
+
     test("login from a valid employee but jwt sign fails", async ()=>{
         model.findOne.mockReturnValue(mockEmployee);
         bcrypt.compare.mockReturnValue(true);
