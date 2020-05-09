@@ -7,3 +7,5 @@ reports/
 # Result html
 *.html
 *.log
+
+*.png
