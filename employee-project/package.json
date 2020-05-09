@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npm run test:unit",
+    "test:mutation": "stryker run",
     "test:coverage": "jest --coverage test/unit/*",
     "test:unit": "jest test/unit/*",
     "test:integration": "cross-env NODE_ENV=test jest --watchAll --detectOpenHandles test/integration/*",
@@ -21,6 +23,10 @@
     "mongoose": "^5.9.12"
   },
   "devDependencies": {
+    "@stryker-mutator/core": "^3.1.0",
+    "@stryker-mutator/javascript-mutator": "^3.1.0",
+    "@stryker-mutator/jest-runner": "^3.1.0",
+    "jest": "^25.5.4",
     "jest-html-reporter": "^3.1.0",
     "node-mocks-http": "^1.8.1",
     "nodemon": "^2.0.3",
