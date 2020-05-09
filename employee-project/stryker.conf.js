@@ -20,6 +20,8 @@ module.exports = function (config) {
     },
     logLevel: "all",
     thresholds: { high: 95, low: 85, break: 56 },
-    timeoutMs: 10*60*1000, // 10 minutes
+    timeoutMs: 60*1000, // 1 minute
+    timeoutFactor: 4,
+    maxConcurrentTestRunners: 6
   });
 };
