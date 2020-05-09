@@ -15,6 +15,8 @@ npm run test:integration //To perform integration tests
 
 npm run test:coverage //To run unit tests with code coverage
 
+npm run test:mutation //To run mutation tests
+
 
 ## To run jest tests in /functional
 
